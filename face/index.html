@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="box">
+		<section class="floatlayout">
+			<style>
+				.floatleft{
+					width:100px;
+					float: left;
+				}
+				.floatright{
+					float: right;
+					width: 100px
+				}
+				.floatcenter{
+				}
+			</style>
+			<div class="floatleft left"></div>
+			<div class="floatright right"></div>
+			<div class="floatcenter center">
+				<p>我是浮动</p>
+			</div>
+		</section>
+		<hr>
+		<section class="positionlayout">
+			<style>
+				.positionBox{
+					position: relative;
+				}
+				.positionBox > div{
+					position: absolute;
+					height: 100px;
+				}
+				.positionleft{
+					width:100px;
+					left: 0;
+				}
+				.positionright{
+					right: 0;
+					width: 100px
+				}
+				.positioncenter{
+					right: 100px;
+					left:100px;
+				}
+				
+			</style>
+			<div class="positionBox">
+				<div class="positionleft left"></div>
+				<div class="positioncenter center">
+					<p>我是定位</p>
+				</div>
+				<div class="positionright right"></div>
+			</div>			
+		</section>
+		<hr>
+		<section class="flexlayout">
+			<style>
+				.flexbox{
+					display: flex;
+				}
+				.flexleft{
+					width:100px;
+				}
+				.flexright{
+					width:100px;
+				}
+				.flexcenter{
+					flex:1;
+				}
+			</style>
+			<div class="flexbox">
+				<div class="flexleft left"></div>
+				<div class="flexcenter center">
+					<p>我是弹性盒</p>
+				</div>
+				<div class="flexright right"></div>
+			</div>
+			
+		</section>
+		<hr>
+		<section class="tablelayout">
+			<style>
+				.tablebox{
+					width:100%;
+					height: 100px;
+					display: table;
+				}
+				.tablebox > div{
+					display: table-cell;
+				}
+				.tableleft{
+					width:100px;
+				}
+				.tableright{
+					width:100px;
+				}
+				.tablecenter{
+					width: auto;
+				}
+			</style>
+			<div class="tablebox">
+				<div class="tableleft left"></div>
+				<div class="tablecenter center">
+					<p>我是弹性盒</p>
+				</div>
+				<div class="tableright right"></div>
+			</div>
+			
+		</section>
+		<hr>
+		<section class="tablelayout">
+			<style>
+				.gridbox{
+					width:100%;
+					height: 100px;
+					display: grid;
+					grid-template-row:100px;
+					grid-template-columns:100px auto 100px;
+				}
+			</style>
+			<div class="gridbox">
+				<div class="gridleft left"></div>
+				<div class="gridcenter center">
+					<p>我是弹性盒</p>
+				</div>
+				<div class="gridright right"></div>
+			</div>
+			
+		</section>
+		<hr>
+		
+	</div>
+</body>
+</html>
+
+<style>
+	html,*{
+		margin:0;
+		padding:0;
+	}
+
+	section > div {
+		height: 100px;
+	}
+	.left{
+		background: #f00;
+	}
+	.right{
+		background: pink;
+	}
+	.center{
+		background: yellow;
+	}
+	.center p{
+		text-align: center;
+		line-height: 100px;
+	}
+</style>
